@@ -11,6 +11,10 @@
 		FC35F7A422E9026000337E60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC35F7A222E9026000337E60 /* Main.storyboard */; };
 		FC35F7A622E9026300337E60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC35F7A522E9026300337E60 /* Assets.xcassets */; };
 		FC35F7A922E9026300337E60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC35F7A722E9026300337E60 /* LaunchScreen.storyboard */; };
+		FC35F7B322E907B200337E60 /* ContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC35F7B222E907B200337E60 /* ContactsTableViewController.m */; };
+		FC35F7B622E90BD500337E60 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC35F7B522E90BD500337E60 /* DetailViewController.m */; };
+		FC35F7B922E90C4900337E60 /* ContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC35F7B822E90C4900337E60 /* ContactController.m */; };
+		FC35F7BC22E90D4500337E60 /* JGPContact.m in Sources */ = {isa = PBXBuildFile; fileRef = FC35F7BB22E90D4500337E60 /* JGPContact.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,15 @@
 		FC35F7A522E9026300337E60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC35F7A822E9026300337E60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC35F7AA22E9026300337E60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC35F7B022E907B200337E60 /* ContactsObjC2Wed-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ContactsObjC2Wed-Bridging-Header.h"; sourceTree = "<group>"; };
+		FC35F7B122E907B200337E60 /* ContactsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsTableViewController.h; sourceTree = "<group>"; };
+		FC35F7B222E907B200337E60 /* ContactsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsTableViewController.m; sourceTree = "<group>"; };
+		FC35F7B422E90BD500337E60 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		FC35F7B522E90BD500337E60 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		FC35F7B722E90C4900337E60 /* ContactController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactController.h; sourceTree = "<group>"; };
+		FC35F7B822E90C4900337E60 /* ContactController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactController.m; sourceTree = "<group>"; };
+		FC35F7BA22E90D4500337E60 /* JGPContact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JGPContact.h; sourceTree = "<group>"; };
+		FC35F7BB22E90D4500337E60 /* JGPContact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JGPContact.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +66,19 @@
 			isa = PBXGroup;
 			children = (
 				FC35F79E22E9026000337E60 /* AppDelegate.swift */,
+				FC35F7B422E90BD500337E60 /* DetailViewController.h */,
+				FC35F7B522E90BD500337E60 /* DetailViewController.m */,
+				FC35F7B222E907B200337E60 /* ContactsTableViewController.m */,
+				FC35F7B122E907B200337E60 /* ContactsTableViewController.h */,
 				FC35F7A222E9026000337E60 /* Main.storyboard */,
+				FC35F7B822E90C4900337E60 /* ContactController.m */,
+				FC35F7B722E90C4900337E60 /* ContactController.h */,
+				FC35F7BB22E90D4500337E60 /* JGPContact.m */,
+				FC35F7BA22E90D4500337E60 /* JGPContact.h */,
 				FC35F7A522E9026300337E60 /* Assets.xcassets */,
 				FC35F7A722E9026300337E60 /* LaunchScreen.storyboard */,
 				FC35F7AA22E9026300337E60 /* Info.plist */,
+				FC35F7B022E907B200337E60 /* ContactsObjC2Wed-Bridging-Header.h */,
 			);
 			path = ContactsObjC2Wed;
 			sourceTree = "<group>";
@@ -87,12 +109,14 @@
 		FC35F79322E9026000337E60 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JGP;
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = johnpitts;
 				TargetAttributes = {
 					FC35F79A22E9026000337E60 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -132,7 +156,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC35F7B322E907B200337E60 /* ContactsTableViewController.m in Sources */,
+				FC35F7B922E90C4900337E60 /* ContactController.m in Sources */,
 				FC35F79F22E9026000337E60 /* AppDelegate.swift in Sources */,
+				FC35F7B622E90BD500337E60 /* DetailViewController.m in Sources */,
+				FC35F7BC22E90D4500337E60 /* JGPContact.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ASMS2YJYR9;
 				INFOPLIST_FILE = ContactsObjC2Wed/Info.plist;
@@ -287,6 +316,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.johnpitts.ContactsObjC2Wed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ContactsObjC2Wed/ContactsObjC2Wed-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -296,6 +327,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ASMS2YJYR9;
 				INFOPLIST_FILE = ContactsObjC2Wed/Info.plist;
@@ -305,6 +337,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.johnpitts.ContactsObjC2Wed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ContactsObjC2Wed/ContactsObjC2Wed-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
